@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'imovel-mysql'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=imovel'
+      - 'MYSQL_PASSWORD=suasenha'
+      - 'MYSQL_ROOT_PASSWORD=suasenha'
+      - 'MYSQL_USER=myuser'
+    ports:
+      - '3306:3306'
